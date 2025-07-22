@@ -1,11 +1,19 @@
-# Focus_on_Today_project 
-🌟 Focus on Today is a fully functional web project built using HTML, CSS, and JavaScript. It lets you add three daily tasks and track your progress as you complete them ✅. Once all tasks are entered, you can mark each one as complete using a check button 🗹. A dynamic progress bar visually updates to show how many out of three tasks you’ve finished 📊—helping you stay focused and productive throughout the day.
+Focus_on_Today_Project
+🌟 Focus on Today is a fully functional web project built using HTML, CSS, and JavaScript. It helps users stay focused and productive by managing daily tasks.
 
-To Visit click on : 🔗https://saurabhkmmishra.github.io/focusOnTodayProject/
+✅ Key Features:
+➕ Add up to three daily tasks to keep your to-do list simple and focused.
 
-🖥️📱 This project is also responsive, meaning it works smoothly across different devices—whether you're using a phone, tablet, or laptop.
-🎨 It features a clean, user-friendly design and was created by me as a practice project to strengthen my front-end development skills.
+🗹 Mark tasks as complete using a check button for each.
 
+📊 Dynamic progress bar updates in real-time based on tasks completed.
 
+🖥️📱 Responsive design – works smoothly on phones, tablets, and desktops.
 
+🎨 Clean and user-friendly UI for a pleasant user experience.
+
+💡 Built as a practice project to improve my front-end development skills.
+
+🔗 Live Demo:
+Click here to visit the project
 
