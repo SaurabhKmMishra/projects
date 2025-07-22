@@ -1,6 +1,8 @@
 const checkBoxList = document.querySelectorAll('.custom-checkbox');
 const inputFields = document.querySelectorAll('.goal-input');
 const errorLabel = document.querySelector('.error-label');
+const progressLabel = document.querySelector('.progress-label');
+
 const progressAmtBar = document.querySelector('.progress-amount');
 const progressTextSpan = document.querySelector('.progress-text');
 const footerQuote = document.querySelector('.quote');
@@ -116,16 +118,20 @@ function changeProgressAmt(count){
                 // for footer quote
 
     if(count === 1){
+        progressLabel.textContent = `Well begun is half done! 🚀`;
         footerQuote.textContent = `“You've taken the first step — and that's where champions begin.”`;
 
     }
     else if(count === 2){
+        progressLabel.textContent = `Two down — keep going, you're closer than ever! 💪⏳`;   
         footerQuote.textContent = `“Keep Going, You're making great progress!”`;
     }
     else if(count === 3){
+        progressLabel.textContent = `Whoa! You just nailed all your goals — time to chill and celebrate! 🎉😎`;
         footerQuote.textContent = `“Congratulations! You've proven that vision + action = success.”`
     }
     else {
+        progressLabel.textContent = `Raise the bar by completing your goals! 🎯`;
         footerQuote.textContent = `“Move one step ahead, today!”`;
     }
 
