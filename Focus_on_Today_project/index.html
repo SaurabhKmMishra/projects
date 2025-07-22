@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    
 </head>
 <body>
     <main>
@@ -24,7 +26,7 @@
             <p class="progress-label">Raise the bar by completing your goals!</p>
 
             <div class="progress-bar">
-                <div class="progress-amount"></div>
+                <div class="progress-amount"><span class="progress-text"></span></div>
             </div>
 
             <p class="error-label">Please set all the 3 goals!</p>
@@ -33,21 +35,21 @@
                 <div class="custom-checkbox">
                     <img class="check-icon" src="./images/done-smbl.svg" alt="check-icon">
                 </div>
-                <input class="goal-input" type="text" placeholder="Add new goal... ">
+                <input class="goal-input" id="first" type="text" placeholder="Add new goal... ">
             </div>
 
             <div class="goal-container">
                 <div class="custom-checkbox">
                     <img class="check-icon" src="./images/done-smbl.svg" alt="check-icon">
                 </div>
-                <input class="goal-input" type="text" placeholder="Add new goal... ">
+                <input class="goal-input"  id="second" type="text" placeholder="Add new goal... ">
             </div>
 
             <div class="goal-container">
                 <div class="custom-checkbox">
                     <img class="check-icon" src="./images/done-smbl.svg" alt="check-icon">
                 </div>
-                <input class="goal-input" type="text" placeholder="Add new goal... ">
+                <input class="goal-input"  id="third" type="text" placeholder="Add new goal... ">
             </div>
 
             <p class="quote">“Move one step ahead, today!”</p>
@@ -58,7 +60,6 @@
 
         </div>
     </main>
-    <script src="script.js"></script>
 
 </body>
 </html>
