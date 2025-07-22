@@ -16,7 +16,7 @@
 
 🔲 Flexbox and Grid Layouts
 
-🧱 HTML5 semantic tags like header, nav, main and footer tag etc.
+🧱 HTML5 semantic tags like <header, nav, main and footer> tags etc.
 
 🌐 The site is fully responsive and adjusts smoothly across different screen sizes, giving a great user experience on both desktop 💻 and mobile 📱.
 
