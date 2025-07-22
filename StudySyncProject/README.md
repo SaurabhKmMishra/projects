@@ -1,6 +1,6 @@
-📘 StudySync is a simple yet effective project built using HTML and CSS, designed to sharpen my frontend development skills.
+<h3>📘 StudySync is a simple yet effective project built using HTML and CSS, designed to sharpen my frontend development skills.</h3>
 
-Hosted Link: [click here to cisit the site](https://web-dev-learnings-studysync-project.vercel.app/).
+🔗Hosted Link: [click here to visit the site](https://web-dev-learnings-studysync-project.vercel.app/).
 
 💡 It features a variety of CSS concepts such as:
 
