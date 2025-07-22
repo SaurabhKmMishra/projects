@@ -1,7 +1,8 @@
 # Focus_on_Today_project 
 🌟 Focus on Today is a fully functional web project built using HTML, CSS, and JavaScript. It helps users stay focused and productive by managing daily tasks.
 
-✅ Key Features:
+📌 Key Features:
+
 ➕ Add up to three daily tasks to keep your to-do list simple and focused.
 
 🗹 Mark tasks as complete using a check button for each.
