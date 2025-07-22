@@ -16,5 +16,5 @@
 💡 Built as a practice project to improve my front-end development skills.
 
 🔗 Live Demo:
-Click here to visit the project
+[Click here to visit the project](https://saurabhkmmishra.github.io/focusOnTodayProject/)
 
