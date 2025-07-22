@@ -17,7 +17,7 @@ main{
     color: #48A300;
     text-align: center;
     font-size: 64px;
-    margin-block: 36px;
+    margin-block: 8px 28px;
 }
 
 .heading span{
@@ -97,43 +97,15 @@ main{
     align-items: center;
     overflow: hidden;
     
-    /* transition: width 2s ease-in-out; */
+    transition: width 2s ease-out;
     white-space: nowrap;
-    transition: width 2s ease-in-out,padding 2s ease-in-out;
 
 }
 
-#zero-task-complete{
-    /* display: none; */
-    width: 0%;
-    /* padding-left:10px; */
-
-} 
-
-#one-task-complete{
-    /* display: flex;
-    align-items: center; */
-    width:33.33%;
-    padding-left:20px;
+.progress-amount span{
+    padding-left:10px;
 
 }
-
-#two-task-complete{
-    /* display: flex;
-    align-items: center; */
-    width:66.66%;
-    padding-left:20px;
-
-} 
-
-#three-task-complete{
-    /* display: flex;
-    align-items: center; */
-    width:100%;
-    padding-left:20px;
-
-}
-
 
 
 .error-label{
@@ -141,7 +113,7 @@ main{
     color: #FF5151;
     margin-bottom: 14px; /* margin-block means margin top and bottom both. */
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 1s ease-in;
     
 }
 
@@ -196,6 +168,7 @@ main{
 .completed .goal-input{
     color: #48A300;
     text-decoration: line-through;
+    
 }
 
 
@@ -262,20 +235,9 @@ main{
         height: 25px;
         margin-bottom: 10px;
     }
-    /* .progress-amount{
-    padding: 0 15px;
-
-    } */
-    
+ 
     .error-label{
         margin-bottom: 12px;
     }
 
-}
-
-
-@media (max-width:450px) {
-    #one-task-complete{
-        padding-left:10px;
-    }
 }
