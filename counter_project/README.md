@@ -34,7 +34,7 @@ It also includes keyboard functionality:
 ---
 ## 📸 Preview  
 
-![Counter Project Screenshot](screenshot.png)
+![Counter Project Screenshot](Screenshot.png)
 
 ---
 
