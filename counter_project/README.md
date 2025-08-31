@@ -78,5 +78,5 @@ counter-project/ <br/>
 
 This project is free to use and open source.  
 
-## 📂 Project Structure  
+---
 
