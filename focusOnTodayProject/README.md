@@ -29,7 +29,7 @@ It helps users stay focused and productive by managing their **daily tasks** in 
 
 ## 📸 Preview  
 
-[![Focus on Today Screenshot](images/screenshot.png)](https://focusontodayproject.vercel.app/)  
+[![Focus on Today Screenshot](images/screenshot.png)](https://focusontoday-project.vercel.app/)  
 
 ---
 
