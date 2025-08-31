@@ -39,13 +39,12 @@ It also includes keyboard functionality:
 
 ---
 
-<br/>
 
-counter-project/
-├── index.html # Main HTML file
-├── style.css # Styling for the app
-├── script.js # Counter functionality
-└── README.md # Project documentation
+counter-project/ <br/>
+├── index.html # Main HTML file <br/>
+├── style.css # Styling for the app <br/>
+├── script.js # Counter functionality <br/>
+└── README.md # Project documentation <br/>
 
 
 
