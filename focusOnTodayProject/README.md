@@ -1,6 +1,6 @@
 # 🌟 Focus on Today Project  
 
-🔗 **Live Demo**: [Click Here to Visit the Project](https://focusontodayproject.vercel.app/)  
+🔗 **Live Demo**: [Click Here to Visit the Project](https://focusontoday-project.vercel.app/)
 
 **Focus on Today** is a fully functional web project built using **HTML, CSS, and JavaScript**.  
 It helps users stay focused and productive by managing their **daily tasks** in a simple and effective way.  
