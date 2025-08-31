@@ -1,26 +1,54 @@
-<h3>📘 StudySync is a simple yet effective project built using HTML and CSS, designed to sharpen my frontend development skills.</h3>
+# 📘 StudySync  
 
-#### 🔗 Hosted Link: [click here to visit the site](https://projectstudysync.vercel.app/)
+A simple yet effective project built using **HTML and CSS**, designed to sharpen my frontend development skills.  
 
-</br>
+🔗 **Live Demo**: [Click here to visit the site](https://projectstudysync.vercel.app/)  
 
-📌 It features a variety of CSS concepts such as:
+---
 
-✍️ Typography (fonts, line-height, text-align)
+## 📸 Preview  
 
-🎞️ Animations and Transitions
+[![StudySync Screenshot](screenshot.png)](https://projectstudysync.vercel.app/)  
 
-📱 Media Queries for responsive design
+---
 
-🎨 Colors, Gradients, and Backgrounds
+## ✨ Features & Concepts Covered  
 
-📦 Box Model (margin, padding, border)
+- ✍️ **Typography** → fonts, line-height, text alignment  
+- 🎞️ **Animations & Transitions**  
+- 📱 **Media Queries** → responsive design for multiple screen sizes  
+- 🎨 **Colors, Gradients, and Backgrounds**  
+- 📦 **Box Model** → margin, padding, border  
+- 🔲 **Flexbox & Grid Layouts**  
+- 🧱 **HTML5 Semantic Tags** → `<header>`, `<nav>`, `<main>`, `<footer>`  
 
-🔲 Flexbox and Grid Layouts
+---
 
-🧱 HTML5 semantic tags like <header, nav, main and footer> tags etc.
+## 🌐 Responsiveness  
 
-🌐 The site is fully responsive and adjusts smoothly across different screen sizes, giving a great user experience on both desktop 💻 and mobile 📱.
+The site is fully responsive and adjusts smoothly across different screen sizes, ensuring a great user experience on both **desktop 💻** and **mobile 📱**.  
 
-🚀 It was a fun and valuable project to practice structuring content, styling layouts, and understanding responsive behavior in real-world scenarios.
+---
 
+## 📂 File Structure  
+
+StudySync/
+│── index.html # Main HTML file
+│── style.css # Stylesheet
+│── screenshot.png # Project preview image
+└── images/ # All image resources
+
+---
+
+## 🚀 Learning Outcome  
+
+This project helped me:  
+- Practice **structuring content** with semantic HTML  
+- Improve **layout styling** using CSS  
+- Understand **responsive behavior** in real-world scenarios  
+
+---
+
+## 📜 License  
+
+Free to use and learn ✨  
