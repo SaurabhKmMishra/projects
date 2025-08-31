@@ -41,7 +41,7 @@ Focus_on_Today_project/ <br/>
 ├── style.css # Styling for the app <br/>
 ├── script.js # Task manager functionality <br/>
 ├── images/ # Folder containing all image sources (icons, screenshots, etc.) <br/>
- └── screenshot.png # Project screenshot <br/>
+│ └── screenshot.png # Project screenshot <br/>
 ├── README.md # Project documentation <br/>
 
 ---
