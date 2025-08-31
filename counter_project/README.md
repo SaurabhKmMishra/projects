@@ -36,13 +36,17 @@ It also includes keyboard functionality:
 
 ![Counter Project Screenshot](Screenshot.png)
 
+
 ---
+
+<br/>
 
 counter-project/
 ├── index.html # Main HTML file
 ├── style.css # Styling for the app
 ├── script.js # Counter functionality
 └── README.md # Project documentation
+
 
 
 ---
