@@ -33,6 +33,9 @@ It helps users stay focused and productive by managing their **daily tasks** in 
 
 ---
 
+## 📂 Project Structure  
+
+
 Focus_on_Today_project/ <br/>
 ├── index.html # Main HTML file <br/>
 ├── style.css # Styling for the app <br/>
