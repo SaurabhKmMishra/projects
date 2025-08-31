@@ -1,139 +1,65 @@
-const checkBoxList = document.querySelectorAll('.custom-checkbox');
-const inputFields = document.querySelectorAll('.goal-input');
-const errorLabel = document.querySelector('.error-label');
-const progressLabel = document.querySelector('.progress-label');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus on Today</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/Zv1WhINZl1N5Koahd4rvRcxRYFpWyybfR0SM-fDAWyM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8yMTkyLzIxOTIz/NTEucG5nP3NlbXQ9/YWlzX2h5YnJpZA" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <main>
+        <h1 class="heading">Focus on <span>Today</span></h1>
 
-const progressAmtBar = document.querySelector('.progress-amount');
-const progressTextSpan = document.querySelector('.progress-text');
-const footerQuote = document.querySelector('.quote');
+        <div class="main-container">
 
-const allGoals =  JSON.parse(localStorage.getItem('allGoals'))||{};
+            <h2 class="title"><span>Today</span>
+                <span class="img-spn"><img src="./images/🦆 icon _Sun_.svg" alt="sun image" class="sun-icon"><img src="./images/Group 3.svg" class="sun-face" alt="sun-icon-face"></span>
 
+            </h2>
 
+            <p class="progress-label">Raise the bar by completing your goals!</p>
 
-let count = Object.values(allGoals).filter((goals) => goals.completed).length;
+            <div class="progress-bar">
+                <div class="progress-amount"><span class="progress-text"></span></div>
+            </div>
 
-checkBoxList.forEach( (checkbox) => {
+            <p class="error-label">Please set all the 3 goals!</p>
 
-    checkbox.addEventListener('click', (e)=> {
-        
-        const allGoalsAdded = [...inputFields].every( (input) =>{
-            return  input.value.trim() !== ""; 
-        });
-        
-        if(allGoalsAdded){  
-                 
-            checkbox.parentElement.classList.toggle('completed');
+            <div class="goal-container">
+                <div class="custom-checkbox">
+                    <img class="check-icon" src="./images/done-smbl.svg" alt="check-icon">
+                </div>
+                <input class="goal-input" id="first" type="text" placeholder="Add new goal... ">
+            </div>
 
+            <div class="goal-container">
+                <div class="custom-checkbox">
+                    <img class="check-icon" src="./images/done-smbl.svg" alt="check-icon">
+                </div>
+                <input class="goal-input"  id="second" type="text" placeholder="Add new goal... ">
+            </div>
 
-            const inputId = checkbox.nextElementSibling.id;
-            allGoals[inputId].completed = !allGoals[inputId].completed; // i.e, to change the existing value
+            <div class="goal-container">
+                <div class="custom-checkbox">
+                    <img class="check-icon" src="./images/done-smbl.svg" alt="check-icon">
+                </div>
+                <input class="goal-input"  id="third" type="text" placeholder="Add new goal... ">
+            </div>
 
+            <p class="quote">“Move one step ahead, today!”</p>
 
-                    // to maintain disablility for completed ones
+            <p class="made-by">Made with ❤️ by Saurabh Kumar Mishra</p>
+
             
-            if(allGoals[inputId].completed ){
-                checkbox.nextElementSibling.disabled = true;
-            }
-            else{
-                checkbox.nextElementSibling.disabled = false;
-            }
-    
-                    // to change prg amt txt,wdth and footrQuote
 
-            count = Object.values(allGoals).filter((goals) => goals.completed).length; // to updt cnt in real time.
+        </div>
+    </main>
 
-            changeProgressAmt(count);
-
-            localStorage.setItem( 'allGoals', JSON.stringify(allGoals));
-
-        }   
-
-        else{
-            errorLabel.classList.add('show-error');
-
-        }     
-
-    })
-});
-
-                 // for local storg pre text on refresh
-    
-
-inputFields.forEach( (input) => {
-   
-
-    if(Object.keys(allGoals).length !== 0){ // to ensure that allGoals is not empty
-
-        input.value = allGoals[input.id].name; // to maintain data
-
-        if( allGoals[input.id].completed ){ // fr chkBox
-            input.parentElement.classList.add('completed');
-
-            input.disabled = true;
-        }
-        
-        changeProgressAmt(count);
-
-
-    }
-
-
-    input.addEventListener( 'input', (e) => {
-
-        allGoals[input.id]  = {
-            name: input.value,
-            completed: false,
-        }
-        // allGoals.count = 0;
-
-        localStorage.setItem( 'allGoals', JSON.stringify(allGoals)); // to set in local storage the obj. after conv. to string.
-
-    })
-
-    input.addEventListener( 'focus', (e)=> {
-        errorLabel.classList.remove('show-error');
-    });
-
-
-});
-
-
-
-function changeProgressAmt(count){
-
-    progressAmtBar.style.width = `${count/3 * 100}%`;
-
-
-                // for progress bar text
-
-    if(count>0){
-        progressTextSpan.textContent = `${count}/3 Completed`;
-    }
-    else{
-        progressTextSpan.textContent = `0/3`;
-    }
-
-
-                // for footer quote
-
-    if(count === 1){
-        progressLabel.textContent = `Well begun is half done! 🚀`;
-        footerQuote.textContent = `“You've taken the first step — and that's where champions begin.”`;
-
-    }
-    else if(count === 2){
-        progressLabel.textContent = `Two down — keep going, you're closer than ever! 💪⏳`;   
-        footerQuote.textContent = `“Keep Going, You're making great progress!”`;
-    }
-    else if(count === 3){
-        progressLabel.textContent = `Whoa! You just nailed all your goals — time to chill and celebrate! 🎉😎`;
-        footerQuote.textContent = `“Congratulations! You've proven that vision + action = success.”`
-    }
-    else {
-        progressLabel.textContent = `Raise the bar by completing your goals! 🎯`;
-        footerQuote.textContent = `“Move one step ahead, today!”`;
-    }
-
-
-}
+</body>
+</html>
