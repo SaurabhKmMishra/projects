@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+    color:#492118;
+    scroll-behavior: smooth;
+
+
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+#top{
+    height: 11.816vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+    width: 85vw;
+    margin: 2vh auto;
+    
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 680;
+    font-size: 1.3rem;
+}
+
+.logo{
+    height: 8vh;
+}
+
+.anchorTags{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.5vw;
+}
+
+.hamburger{
+    background-color: #ffffff;
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor:pointer;
+    display: flex;
+    flex-shrink: 1;
+
+    position: relative;
+    border-bottom-left-radius: 50px;
+    display: none;
+
+}
+
+.hamburger img{
+   
+   height: 10px;
+   position:absolute;
+   left:14px;
+   top: 10px;
+}
+
+.cancelIcon{
+
+    height: 10px;
+    margin-right: 2vw;
+    margin-top: 2vh;
+    vertical-align: baseline;
+    display: none;
+
+}
+
+main{
+    background-color: #F6F0EB;
+}
+
+.heroSectionContainer{
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.imgCntnr{
+    overflow: clip;
+}
+
+.heroImg{
+    width: 85vw;
+}
+
+.heroTxt{
+    font-size: 1.5rem;
+}
+
+section{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    margin-inline:auto;
+    margin-top:18vh;
+}
+
+section img{
+    width: 73vw;
+
+}
+
+section h2{
+    align-self: center;
+}
+
+footer{
+    width: 63vw;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-bottom: 2vh;
+    
+}
+
+.go-to-top{
+    font-size: 2rem;
+    margin-block:13vh 11vh;
+    color: #000000;
+    
+}
+
+footer p{
+    color: #858585;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width:1300px)  {
+    #top, .heroImg{
+        width: 94vw;
+    }
+}
+
+@media (max-width:1200px)  {
+    #top{
+        width: 94vw;
+        height: 10vh;
+        gap: 4vw;
+    }
+    nav a{
+        font-weight: 650;
+        font-size: 1rem;
+    }
+    .anchorTags{
+        gap: 4.5vw;
+    }
+    .logo{
+        height: 8.2vh;
+    }
+
+    .heroImg{
+        width: 94vw;
+    }
+    footer,section img{
+        width: 82vw;
+    }
+} 
+
+@media (max-width:960px) {
+    #top, .heroImg{
+        width: 92vw;
+    }
+    #top{
+        height: 8vh;
+    }
+    .logo{
+        height: 6.5vh;
+    }
+    nav a{
+        font-weight: 650;
+        font-size: 0.75rem;
+    }    
+
+    .heroSectionContainer{
+        padding-top: 5vh;
+        gap: 3vh;
+           
+    }
+    section{
+        margin-top:5vh;
+        font-size: 0.6rem;
+        gap: 3vh;
+    }
+    .heroTxt {
+        font-size: 0.625rem;
+    }
+    footer,section img{
+        width: 92vw;
+    }    
+    .go-to-top{
+        font-size: 1rem;
+        margin-block:6vh 4vh;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:767px) {
+    body{
+        background-color: #F6F0EB;
+        position: relative;
+
+    }  
+
+    .heroImg,footer,section img{
+        width: 90vw;
+    }       
+    #top{
+        width: 90.2vw;
+        position: sticky;
+        top:0;
+        margin-block: 0;
+        background-color:#f0ebe76c;
+  
+    }
+    .logo{
+        height: 4.7vh;
+    }
+    .hamburger, .show{
+        display: flex;
+    }  
+    .anchorTags, .hide{
+        display: none;
+    } 
+    .activeMenues{
+        height: 210px; 
+        background-color: #ffffffec;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: start;
+        flex-shrink: 1;
+        gap: 2.3vh;
+
+        position: sticky;
+        left: 80vw;
+        margin-top: 12rem;
+        padding-inline: 1.2rem;
+        z-index: -1;
+
+        transition: transform 1s ease;
+
+    } 
+
+    .move{
+        transform: translateX(90vw);
+    }
+    .heroSectionContainer{
+        padding-top: 3vh;
+        gap: 3vh;
+        margin-top: 0.8vh;   
+    }
+    .go-to-top{
+        font-size: 0.8rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+}

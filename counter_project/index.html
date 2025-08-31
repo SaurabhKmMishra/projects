@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+
+            <span class="appName">Counter</span>
+            <span class="github"><a href="github.com">
+                <img src="github.svg" alt="githubLink" class="githubImg">
+            </a></span>
+
+        </header>
+
+        <main>
+
+            <section class="counter">
+                
+                <p class="Countervalue">0</p>
+                
+                <span class="regulateBtns">
+                <div class="decrementBtn">-</div>
+                <div class="incrementBtn">+</div>
+                </span>
+
+                <span class="stepValueContainer">
+                <label for="stepAmount">Increment/Decrement by:</label>
+                <input type="number" id="stepAmount" min="1" value="1">
+                </span>
+
+                <div class="resetBtn">Reset</div>
+
+                <span id="userGuide"> Keyboard shortcuts: <kbd>+</kbd> to increment, <kbd>-</kbd> to decrement, <kbd>Page Up/Down</kbd> to change step value.</span>
+
+            </section>
+
+        </main>
+
+        <footer>Made with 💙 by Saurabh Kumar Mishra</footer>
+
+
+
+</body>
+</html>
