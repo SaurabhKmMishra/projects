@@ -1,6 +1,6 @@
 # Counter Project  
 
-🔗 **Live Demo**: [Click Here to View Project](https://your-username.github.io/counter-project/)  
+🔗 **Live Demo**: [Click Here to View Project](https://counter-jsproject.vercel.app/)
 
 A simple **JavaScript mini project** built with **HTML, CSS, and JavaScript**.  
 This counter application allows users to increment or decrement a value using `+` and `-` buttons. Additionally, it supports a **step value input**, so the counter increases or decreases by the specified step value instead of just `1`.  
