@@ -32,11 +32,11 @@ The site is fully responsive and adjusts smoothly across different screen sizes,
 
 ## 📂 File Structure  
 
-StudySync/
-│── index.html # Main HTML file
-│── style.css # Stylesheet
-│── screenshot.png # Project preview image
-└── images/ # All image resources
+StudySync/ </br>
+│── index.html # Main HTML file </br>
+│── style.css # Stylesheet </br>
+│── screenshot.png # Project preview image </br>
+└── images/ # All image resources </br>
 
 ---
 
